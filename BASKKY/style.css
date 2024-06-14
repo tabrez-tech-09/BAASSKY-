@@ -109,16 +109,19 @@
 
 /*================ main page======================  */
 
+#images {
+  background-image: url(Images/wp4712014-city-anime-wallpapers.jpg);
+  height: 110vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 
-
-
-
-
-
-
-
-
-/*   ======end of main page ==================================*/
 .sign {
   position: absolute;
   display: flex;
@@ -311,3 +314,5 @@
     font-size: 4em; 
   }
 }
+
+/*   ======end of main page ==================================*/
