@@ -1,94 +1,124 @@
+@import url(https://fonts.google.com/specimen/Roboto); 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-  min-height: 100vh;
-  background-image: url("./Images/wp4712014-city-anime-wallpapers.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: "Comic Sans MS", cursive;
-}
+ h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+ }
+ h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+ }
+ h4 {
+    font-size: 20px;
+    color: #222;
+ }
+ h6 {
+    font-weight: 700;
+    font-size: 12px;
+ }
+ .section-p1{
+    padding: 40px 80px;
+ }
+ .section-m1{
+    margin: 40px 0;
+ }
+ button.normal {
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   color: black;
+   background-color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+   outline: none;
+   transition: 0.2s;
+ }
+ button.white {
+   font-size: 14px;
+   font-weight: 600;
+   padding: 11px 18px;
+   color: white;
+   background-color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+   border: 1px solid #fff
+   outline: none;
+   transition: 0.2s;
+ }
+
+
+ body {
+    width: 100%;
+ }
+ /*/////////////////////header start /////////////////////////////////////// */
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:#E3E6F6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+ #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ 
+ #navbar li{
+   list-style: none;
+   padding: 0 26px;
+   position: relative;
+ }
+ 
+ #navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease; 
+ }
+ 
+ #navbar li a:hover,
+ #navbar li a.active {
+   color: red;
+ } 
+ #navbar li a.active::after,
+ #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+/*================ main page======================  */
 
 
 
-/* nav bar */
-header{
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  position: fixed;
-  padding: 0 2rem;
-}
-.nav-bar{
-  width: 100%;
-  height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo img {
-  width: 50px; 
-  height: auto;
-}
-.nav-bar .toggle-btn{
-  color: #9e06b3;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-.nav-bar .links{
-  display: flex;
-  gap: 2rem;
-}
-
-
-header {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fadcd9;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-  position: relative; 
-  z-index: 1; 
-}
-/* DROPDOWN */
-.dropdown
-{
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 300px;
-  background: rgba(0, 0, 0, 0.999);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.dropdown.open
-{
-  height: auto;
-}
-.dropdown li
-{
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-li {
-  list-style: none;
-}
 
 
 
 
+
+
+
+/*   ======end of main page ==================================*/
 .sign {
   position: absolute;
   display: flex;
